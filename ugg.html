@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My first website</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        .bg-1 {
+            background-color: white;
+            color: burlywood;
+            text-align: center;
+        }
+
+        .bg-2 {
+            background-color: burlywood;
+            color: white;
+            text-align: center;
+        }
+
+        .bg-3 {
+            background-color: white;
+            text-align: center;
+            height: 330px;
+        }
+
+        .bg-4 {
+            background-color: white;
+            text-align: center;
+            height: 100px;
+        }
+
+        .containar {
+            background-color: white;
+            height: 100px;
+            text-align: center
+        }
+    </style>
+</head>
+
+<body>
+    <nav class=" navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">UGG</a>
+            </div>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">Gifts</a></li>
+                <li><a href="#">Women</a></li>
+                <li><a href="#">Men</a></li>
+                <li><a href="#">Kids</a></li>
+                <li><a href="#">Sale</a></li>
+                <li><a href="#">About UGG</a></li>
+                <li><a href="#">
+                        <html>
+
+                        <head>
+                            <meta name="viewport" content="width=device-width, initial-scale=1">
+                            <style>
+                                body {
+                                    font-family: Arial, Helvetica, sans-serif;
+                                }
+
+                                /* Full-width input fields */
+                                input[type=text],
+                                input[type=password] {
+                                    width: 100%;
+                                    padding: 12px 20px;
+                                    margin: 8px 0;
+                                    display: inline-block;
+                                    border: 1px solid #ccc;
+                                    box-sizing: border-box;
+                                }
+
+                                button:hover {
+                                    opacity: 0.8;
+                                }
+
+                                /* Set a style for all buttons */
+
+                                /* Extra styles for the cancel button */
+                                .cancelbtn {
+                                    width: auto;
+                                    padding: 10px 18px;
+                                    background-color: #f44336;
+                                }
+
+                                /* Center the image and position the close button */
+                                .imgcontainer {
+                                    text-align: center;
+                                    margin: 24px 0 12px 0;
+                                    position: relative;
+                                }
+
+                                img.avatar {
+                                    width: 40%;
+                                    border-radius: 50%;
+                                }
+
+                                .container {
+                                    padding: 16px;
+                                }
+
+                                span.psw {
+                                    float: right;
+                                    padding-top: 16px;
+                                }
+
+                                /* The Modal (background) */
+                                .modal {
+                                    display: none;
+                                    /* Hidden by default */
+                                    position: fixed;
+                                    /* Stay in place */
+                                    z-index: 1;
+                                    /* Sit on top */
+                                    left: 0;
+                                    top: 0;
+                                    width: 100%;
+                                    /* Full width */
+                                    height: 100%;
+                                    /* Full height */
+                                    overflow: auto;
+                                    /* Enable scroll if needed */
+                                    background-color: rgb(0, 0, 0);
+                                    /* Fallback color */
+                                    background-color: rgba(0, 0, 0, 0.4);
+                                    /* Black w/ opacity */
+                                    padding-top: 60px;
+                                }
+
+                                /* Modal Content/Box */
+                                .modal-content {
+                                    background-color: #fefefe;
+                                    margin: 5% auto 15% auto;
+                                    /* 5% from the top, 15% from the bottom and centered */
+                                    border: 1px solid #888;
+                                    width: 80%;
+                                    /* Could be more or less, depending on screen size */
+                                }
+
+                                /* The Close Button (x) */
+                                .close {
+                                    position: absolute;
+                                    right: 25px;
+                                    top: 0;
+                                    color: #000;
+                                    font-size: 35px;
+                                    font-weight: bold;
+                                }
+
+                                .close:hover,
+                                .close:focus {
+                                    color: red;
+                                    cursor: pointer;
+                                }
+                            </style>
+                        </head>
+
+                        <body>
+                            <button onclick="document.getElementById('id01').style.display='block'"
+                                style="width:auto;">My Account</button>
+
+                            <div id="id01" class="modal">
+
+                                <form class="modal-content animate" action="/action_page.php" method="post">
+                                    <div class="container">
+                                        <label for="uname"><b>Username</b></label>
+                                        <input type="text" placeholder="Enter Username" name="uname" required>
+
+                                        <label for="psw"><b>Password</b></label>
+                                        <input type="password" placeholder="Enter Password" name="psw" required>
+
+                                        <button type="submit">Login</button>
+                                        <label>
+                                            <input type="checkbox" checked="checked" name="remember"> Remember me
+                                        </label>
+                                    </div>
+
+                                    <div class="container" style="background-color:#f1f1f1">
+                                        <button type="button"
+                                            onclick="document.getElementById('id01').style.display='none'"
+                                            class="cancelbtn">Cancel</button>
+                                        <span class="psw">Forgot password?<a href="#"></a></span>
+                                    </div>
+                                </form>
+                            </div>
+
+                            <script>
+                                // Get the modal
+                                var modal = document.getElementById('id01');
+
+                                // When the user clicks anywhere outside of the modal, close it
+                                window.onclick = function (event) {
+                                    if (event.target == modal) {
+                                        modal.style.display = "none";
+                                    }
+                                }
+                            </script>
+                        </body>
+
+                        </html>
+                    </a></li>
+            </ul>
+        </div>
+    </nav>
+    </div>
+    <div>
+        <div class="container-fluid bg-1">
+            <img src="boot.jpg" alt="boot" class="img-rectaingle" style="float:left;width:500px;height:550px;">
+            <h1>Everyday in UGG - With matching classics</h1>
+        </div>
+    </div>
+    <div>
+        <div class=" container-fluid bg-2">
+            <h3>Who are you shopping for?</h3>
+            <div class="row">
+            </div>
+            <div class="col-md-3">
+                <img src="boot1.jpeg" alt="boot1" height="300px" width="250px" class="img-rectaingle">
+                <p><a href="#" class="btn btn-default btn-lg">Women</a></p>
+            </div>
+            <div class="col-md-3">
+                <img src="boot2.jpg" alt="boot2" height="300px" width="250px" class="img-rectaingle">
+                <p><a href="#" class="btn btn-default btn-lg">Men</a></p>
+            </div>
+            <div class="col-md-3">
+                <img src="boot3.jpg" alt="boot3" height="300px" width="250px" class="img-rectaingle">
+                <P><a href="#" class="btn btn-default btn-lg">Kids</a></P>
+            </div>
+            <div class="col-md-3">
+                <img src="boot4.jpg" alt="boot4" height="300px" width="250px" class="img-rectaingle">
+                <p><a href="#" class="btn btn-default btn-lg">Sale</a></p>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div>
+            <div class="container-fluid bg-3">
+                <h3> The story of the UGG brand</h3>
+                <div class="row">
+                    <div class="col-md-4">
+
+
+                    </div>
+                    <div class="col-md-4">
+                        <p>Our story begins in the 1970s, with a surfer who broke convention and decided to live by his
+                            own
+                            authentic rules. After realizing life as an accountant was not for him, Brian Smith moved to
+                            California and recognized a desire to create sheepskin footwear. With a dream, Brian bravely
+                            pursued
+                            his passion, redefining his life and our culture forever.
+
+
+                            Now, we honor our origin story while living fully for today. Now and forever, we are here
+                            for you.
+                            Those who refuse to be defined by convention. Our passionate community who rep UGG like no
+                            other.
+                            Those who have been with us since their first Classic Boot. Our new besties. All of you.
+                            Through it all, we're here to make products crafted to last. Quality construction and
+                            responsible
+                            materialization are at the core of how we create for you.</p>
+                    </div>
+                    <div class="col-md-4">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div>
+        <div class="container-fluid bg-4">
+            <a href="#" class="btn btn-default btn-lg"><span class="glyphicon glyphicon-search"></span>Descover
+                Our Story</a>
+        </div>
+    </div>
+    <div class="container-fluid bg-5">
+        <div class="containar">
+            <a href="#" class="btn btn-default btn-lg"></span> Comment </a>
+        </div>
+    </div>
+
+    <div>
+        <footer class="container-fluid bg-4 text-center">
+            <p> Booster Web Page Made by <a href="http://www.google.com"> 3team </a></p>
+        </footer>
+</body>
+
+</html>
